@@ -1,5 +1,5 @@
 import './App.css';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import {useState} from 'react';
 //components
 import AddDot from './Components/AddDot';
@@ -20,8 +20,9 @@ function App() {
   return (
     <Container className="mt-5">
       <Row>
-        <Col md={12}>
+        <Col md={12} className="mb-2">
           <CanvasScreen boundary={boundary} dots={dots} />
+          <Button variant="danger" onClick={ () => {setDots([])}}>Clear Canvas</Button>
         </Col>
         <Col md={12}>
           <Row>

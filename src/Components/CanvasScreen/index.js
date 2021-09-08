@@ -8,18 +8,20 @@ export default function CanvasScreen({boundary, dots}) {
     const drawLine = () => {
         const canvasObj = canvasRef.current
         const canvasContext = canvasObj.getContext("2d");
+        canvasContext.clearRect(0, 0, canvasObj.width, canvasObj.height);
         canvasContext.beginPath();
         canvasContext.moveTo(10, canvasObj.height/2);
         canvasContext.lineTo(canvasObj.width-10, canvasObj.height/2);
         canvasContext.stroke();
-        drawDots(dots);
+        console.log("test");
     }
 
-    const drawDots = (dots) => {
+    const drawDots = () => {
         const canvasObj = canvasRef.current
         const canvasContext = canvasObj.getContext("2d");
         let paddingSize = 10;
         let lineWidth = canvasObj.width-20;
+        console.log("test2");
         
         if(dots.length){
             dots.forEach(dot => {
@@ -32,13 +34,22 @@ export default function CanvasScreen({boundary, dots}) {
                 canvasContext.fillStyle = dot.color == "green" ? "#28a745ad" : "#dc35459c";
                 canvasContext.fill();
             });
+        } else {
+            clearCanvas()
         }
+    }
+
+    const clearCanvas = () => {
+        drawLine()
     }
 
     useEffect(() => {
         drawLine()
-    })
-
+    },[])
+    
+    useEffect(() => {
+        drawDots()
+    },[drawDots])
     return (
         <div>
             <canvas 
