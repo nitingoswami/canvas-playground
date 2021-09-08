@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/canvas-playground/static/css/main.06e41435.chunk.css",
-    "main.js": "/canvas-playground/static/js/main.9a1bf5dc.chunk.js",
-    "main.js.map": "/canvas-playground/static/js/main.9a1bf5dc.chunk.js.map",
+    "main.js": "/canvas-playground/static/js/main.f44c9489.chunk.js",
+    "main.js.map": "/canvas-playground/static/js/main.f44c9489.chunk.js.map",
     "runtime-main.js": "/canvas-playground/static/js/runtime-main.cebe3e7d.js",
     "runtime-main.js.map": "/canvas-playground/static/js/runtime-main.cebe3e7d.js.map",
     "static/css/2.27dd871e.chunk.css": "/canvas-playground/static/css/2.27dd871e.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.27dd871e.chunk.css",
     "static/js/2.72b85838.chunk.js",
     "static/css/main.06e41435.chunk.css",
-    "static/js/main.9a1bf5dc.chunk.js"
+    "static/js/main.f44c9489.chunk.js"
   ]
 }
